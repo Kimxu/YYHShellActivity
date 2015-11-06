@@ -5,4 +5,4 @@
 
 # 这个是效果
 
-![](https://github.com/Kimxu/YYHShellActivity/tree/master/demo/demo.gif)
+![](/demo/demo.gif)
