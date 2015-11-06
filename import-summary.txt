@@ -1,0 +1,70 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .DS_Store
+* .idea/
+* .idea/.name
+* .idea/compiler.xml
+* .idea/copyright/
+* .idea/copyright/profiles_settings.xml
+* .idea/misc.xml
+* .idea/modules.xml
+* .idea/vcs.xml
+* .idea/workspace.xml
+* YYHShellActivity.iml
+* ant.properties
+* build.xml
+* out/
+* out/.DS_Store
+* out/production/
+* out/production/.DS_Store
+* out/production/YYHShellActivity/
+* out/production/YYHShellActivity/YYHShellActivity.apk
+* out/production/YYHShellActivity/YYHShellActivity.unaligned.apk
+* out/production/YYHShellActivity/com/
+* out/production/YYHShellActivity/com/appchina/
+* out/production/YYHShellActivity/com/appchina/YYHShellActivity/
+* out/production/YYHShellActivity/com/appchina/YYHShellActivity/BuildConfig.class
+* out/production/YYHShellActivity/com/appchina/YYHShellActivity/R$attr.class
+* out/production/YYHShellActivity/com/appchina/YYHShellActivity/R$drawable.class
+* out/production/YYHShellActivity/com/appchina/YYHShellActivity/R$layout.class
+* out/production/YYHShellActivity/com/appchina/YYHShellActivity/R$string.class
+* out/production/YYHShellActivity/com/appchina/YYHShellActivity/R.class
+* out/production/YYHShellActivity/com/appchina/YYHShellActivity/YYHShellActivity$1.class
+* out/production/YYHShellActivity/com/appchina/YYHShellActivity/YYHShellActivity$MyThread.class
+* out/production/YYHShellActivity/com/appchina/YYHShellActivity/YYHShellActivity.class
+* out/production/YYHShellActivity/com/game/
+* out/production/YYHShellActivity/com/game/Activity/
+* out/production/YYHShellActivity/com/game/Activity/Game.class
+* proguard-project.txt
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app/src/main/AndroidManifest.xml
+* assets/ => app/src/main/assets/
+* res/ => app/src/main/res/
+* src/ => app/src/main/java/
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
