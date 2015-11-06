@@ -5,4 +5,4 @@
 
 # 这个是效果
 
-![](/demo/demo.gif =320x480)
+![](/demo/demo.gif)
