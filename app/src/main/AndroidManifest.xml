@@ -30,7 +30,7 @@
             <!-- 主题  默认 亮色主题 light dark-->
             <meta-data
                 android:name="theme"
-                android:value="dark" />
+                android:value="light" />
             <!-- 横竖屏  默认 true 横屏-->
             <meta-data
                 android:name="landscape"

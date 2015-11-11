@@ -4,11 +4,6 @@
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
         >
-    <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Hello World, YYHShellActivity"
-            />
 </LinearLayout>
 
 <!-- From: file:/Users/xuzhiguo/Downloads/YYHShellActivity1/app/src/main/res/layout/main.xml -->

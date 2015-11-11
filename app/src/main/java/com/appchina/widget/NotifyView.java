@@ -6,7 +6,6 @@ import android.content.res.AssetManager;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
@@ -25,16 +24,22 @@ import java.io.InputStream;
 public class NotifyView extends RelativeLayout {
 
     private DissmissCallBack dissmissCallBack;
-    private String TAG="NotifyView";
+    private String TAG = "NotifyView";
+    private ImageView mIvLogo;
+    private ImageView mIvCancel;
+    private TextView mTvContent;
+    private String textColor;
 
-    public NotifyView(Context context, String theme) {
+    public NotifyView(Context context, String theme,boolean hasClose) {
         super(context);
-        init(context, theme);
+        init(context, theme,hasClose);
     }
 
-    private void init(final Context context, String theme) {
-        ImageView mIvLogo = new ImageView(context);
-        ImageView mIvCancel = new ImageView(context);
+
+    private void init(final Context context, String theme,boolean hasClose) {
+        mIvLogo = new ImageView(context);
+        mIvCancel = new ImageView(context);
+        mTvContent = new TextView(context);
         mIvCancel.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -44,8 +49,8 @@ public class NotifyView extends RelativeLayout {
                 }
             }
         });
-        TextView mTvContent = new TextView(context);
-
+        if (!hasClose)
+            mIvCancel.setVisibility(GONE);
         mTvContent.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,14 +64,18 @@ public class NotifyView extends RelativeLayout {
         AssetManager am = context.getAssets();
         InputStream logo = null;
         InputStream cancel = null;
+        InputStream bg = null;
         try {
             if (theme.equals("light")) {
+                textColor = "#333333";
 
-                logo = am.open("st_light_logo.jpg");
+                logo = am.open("st_light_logo.png");
+                bg = am.open("st_bg_light.png");
 
             } else {
-
-                logo = am.open("st_dark_logo.jpg");
+                textColor = "#ffffff";
+                bg = am.open("st_bg_dark.png");
+                logo = am.open("st_dark_logo.png");
 
             }
             cancel = am.open("st_cancel.png");
@@ -75,7 +84,7 @@ public class NotifyView extends RelativeLayout {
         }
         mIvCancel.setBackgroundDrawable(Drawable.createFromStream(cancel, null));
         mIvLogo.setBackgroundDrawable(Drawable.createFromStream(logo, null));
-        mTvContent.setTextColor(Color.parseColor("#333333"));
+        mTvContent.setTextColor(Color.parseColor(textColor));
         mTvContent.setPadding(dip2px(10), dip2px(10), dip2px(10), dip2px(10));
         mTvContent.setText("该版权由手谈汉化组所有详情请前往：box.18touch");
 
@@ -87,7 +96,7 @@ public class NotifyView extends RelativeLayout {
         mIvLogo.setId(1);
 
         RelativeLayout.LayoutParams cancelParams = new RelativeLayout.LayoutParams(
-                dip2px(25), dip2px(25));
+                dip2px(20), dip2px(20));
         cancelParams.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
         cancelParams.addRule(RelativeLayout.ALIGN_PARENT_TOP);
         mIvCancel.setLayoutParams(cancelParams);
@@ -102,15 +111,15 @@ public class NotifyView extends RelativeLayout {
         mTvContent.setLayoutParams(tvContentParams);
 
 
-        LinearLayout linearLayout =new LinearLayout(context);
-        linearLayout.setPadding(dip2px(10), 0, 0,0);
+        LinearLayout linearLayout = new LinearLayout(context);
+        linearLayout.setPadding(dip2px(10), 0, 0, 0);
         linearLayout.setGravity(Gravity.CENTER);
         linearLayout.setOrientation(LinearLayout.HORIZONTAL);
         linearLayout.addView(mIvLogo);
-        RelativeLayout.LayoutParams lParams =  new RelativeLayout.LayoutParams(dip2px(210),dip2px(80));
+        RelativeLayout.LayoutParams lParams = new RelativeLayout.LayoutParams(dip2px(210), dip2px(80));
         lParams.addRule(RelativeLayout.CENTER_IN_PARENT);
         linearLayout.addView(mTvContent);
-        linearLayout.setBackgroundColor(Color.WHITE);
+        linearLayout.setBackgroundDrawable(Drawable.createFromStream(bg, null));
         linearLayout.setLayoutParams(lParams);
 
 
@@ -120,7 +129,7 @@ public class NotifyView extends RelativeLayout {
         this.setLayoutParams(new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT,
                 LayoutParams.WRAP_CONTENT));
 
-        }
+    }
 
 
     public void setDissmissCallBack(DissmissCallBack dissmissCallBack) {
@@ -133,24 +142,28 @@ public class NotifyView extends RelativeLayout {
     }
 
 
+    public interface DissmissCallBack {
+        void onCallback();
+    }
 
-    public interface DissmissCallBack{
-        public  void onCallback();
-        }
+    public void setCancelVisibility(int visibility) {
+        mIvCancel.setVisibility(visibility);
+    }
 
     private float x;
     private float y;
+
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
         int action = ev.getAction();
-        switch (action){
+        switch (action) {
             case MotionEvent.ACTION_DOWN:
-                 x =ev.getX();
-                y =ev.getY();
+                x = ev.getX();
+                y = ev.getY();
                 break;
-              case MotionEvent.ACTION_MOVE:
-                if (Math.abs(ev.getX()-x)>10||Math.abs(ev.getY()-y)>10)
-                return true;
+            case MotionEvent.ACTION_MOVE:
+                if (Math.abs(ev.getX() - x) > 10 || Math.abs(ev.getY() - y) > 10)
+                    return true;
             case MotionEvent.ACTION_UP:
                 break;
 

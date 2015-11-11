@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 
 import com.appchina.YYHShellActivity.R;
-import com.appchina.utils.ShakeUtils;
+import com.appchina.utils.STApi;
 
 /**
  *
@@ -16,17 +16,19 @@ public class Game extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
+
     }
 
     @Override
     protected void onResume() {
-        ShakeUtils.open(this);
+        STApi.getInstance(this).show(0,200);
+        STApi.getInstance(this).open(100,200);
         super.onResume();
     }
 
     @Override
     protected void onStop() {
-        ShakeUtils.stop();
+        STApi.getInstance(this).stop();
         super.onStop();
 
     }
