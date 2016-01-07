@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 
 import com.appchina.YYHShellActivity.R;
-import com.appchina.utils.STApi;
+import com.sthh.utils.STApi;
 
 /**
  *
@@ -15,21 +15,20 @@ public class Game extends Activity {
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-
+        STApi.onCreate(this);
 
     }
 
     @Override
     protected void onResume() {
-        STApi.getInstance(this).show(0,200);
-        STApi.getInstance(this).open(100,200);
+        STApi.onResume(this);
         super.onResume();
     }
 
-    @Override
-    protected void onStop() {
-        STApi.getInstance(this).stop();
-        super.onStop();
 
+    @Override
+    protected void onPause() {
+        STApi.onPause(this);
+        super.onPause();
     }
 }

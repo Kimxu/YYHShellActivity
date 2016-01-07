@@ -1,8 +1,7 @@
 apply plugin: 'com.android.application'
-
 android {
     compileSdkVersion 22
-    buildToolsVersion "23.0.0 rc3"
+    buildToolsVersion '23.0.2'
 
     defaultConfig {
         applicationId "com.appchina.YYHShellActivity"
@@ -16,4 +15,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+}
+
+dependencies {
+    compile files('../libs/umeng-analytics-game-v5.6.3.0.jar')
 }

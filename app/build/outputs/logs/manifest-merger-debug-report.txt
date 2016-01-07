@@ -1,102 +1,166 @@
 -- Merging decision tree log ---
 manifest
-ADDED from AndroidManifest.xml:2:1
+ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:2:1-86:12
 	package
-		ADDED from AndroidManifest.xml:3:5
-		INJECTED from AndroidManifest.xml:0:0
-		INJECTED from AndroidManifest.xml:0:0
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:3:5-44
+		INJECTED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml
 	android:versionName
-		ADDED from AndroidManifest.xml:5:5
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml
 	android:versionCode
-		ADDED from AndroidManifest.xml:4:5
-		INJECTED from AndroidManifest.xml:0:0
-		INJECTED from AndroidManifest.xml:0:0
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from AndroidManifest.xml:2:11
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:2:11-69
 uses-sdk
-ADDED from AndroidManifest.xml:7:5
+ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:7:5-43
 	android:targetSdkVersion
-		INJECTED from AndroidManifest.xml:0:0
-		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from AndroidManifest.xml:7:15
-		INJECTED from AndroidManifest.xml:0:0
-		INJECTED from AndroidManifest.xml:0:0
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:7:15-40
+		INJECTED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
-ADDED from AndroidManifest.xml:9:5
+ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:9:5-84
 	android:name
-		ADDED from AndroidManifest.xml:9:22
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:9:22-81
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from AndroidManifest.xml:10:5
+ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:10:5-81
 	android:name
-		ADDED from AndroidManifest.xml:10:22
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:10:22-78
 uses-permission#android.permission.VIBRATE
-ADDED from AndroidManifest.xml:11:5
+ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:11:5-66
 	android:name
-		ADDED from AndroidManifest.xml:11:22
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:11:22-63
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from AndroidManifest.xml:13:5
+ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:12:5-75
 	android:name
-		ADDED from AndroidManifest.xml:13:22
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:12:22-72
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from AndroidManifest.xml:14:5
+ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:13:5-80
 	android:name
-		ADDED from AndroidManifest.xml:14:22
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:13:22-77
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from AndroidManifest.xml:16:5
+ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:14:5-78
 	android:name
-		ADDED from AndroidManifest.xml:16:22
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:14:22-75
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:15:5-79
+	android:name
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:15:22-76
+uses-permission#android.permission.INTERNET
+ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:16:5-67
+	android:name
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:16:22-64
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:17:5-76
+	android:name
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:17:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:18:5-75
+	android:name
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:18:22-73
 application
-ADDED from AndroidManifest.xml:17:5
+ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:20:5-84:19
 	android:label
-		ADDED from AndroidManifest.xml:20:9
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:23:9-41
 	android:icon
-		ADDED from AndroidManifest.xml:19:9
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:22:9-45
 	android:theme
-		ADDED from AndroidManifest.xml:18:9
-activity#com.appchina.YYHShellActivity.YYHShellActivity
-ADDED from AndroidManifest.xml:21:9
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:24:9-56
+	android:name
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:21:9-46
+activity#com.sthh.StShellActivity
+ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:25:9-70:20
 	android:label
-		ADDED from AndroidManifest.xml:23:13
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:27:13-45
 	android:theme
-		ADDED from AndroidManifest.xml:24:13
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:28:13-71
 	android:name
-		ADDED from AndroidManifest.xml:22:13
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:26:13-52
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:25:13
+ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:29:13-33:29
 action#android.intent.action.MAIN
-ADDED from AndroidManifest.xml:26:17
+ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:30:17-69
 	android:name
-		ADDED from AndroidManifest.xml:26:25
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:30:25-66
 category#android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:28:17
+ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:32:17-77
 	android:name
-		ADDED from AndroidManifest.xml:28:27
-meta-data#theme
-ADDED from AndroidManifest.xml:31:13
-	android:value
-		ADDED from AndroidManifest.xml:33:17
-	android:name
-		ADDED from AndroidManifest.xml:32:17
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:32:27-74
 meta-data#landscape
-ADDED from AndroidManifest.xml:35:13
+ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:39:13-41:41
 	android:value
-		ADDED from AndroidManifest.xml:37:17
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:41:17-38
 	android:name
-		ADDED from AndroidManifest.xml:36:17
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:40:17-41
 meta-data#pkgname
-ADDED from AndroidManifest.xml:39:13
+ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:43:13-45:65
 	android:value
-		ADDED from AndroidManifest.xml:41:17
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:45:17-62
 	android:name
-		ADDED from AndroidManifest.xml:40:17
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:44:17-39
 meta-data#clsname
-ADDED from AndroidManifest.xml:43:13
+ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:47:13-49:58
 	android:value
-		ADDED from AndroidManifest.xml:45:17
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:49:17-55
 	android:name
-		ADDED from AndroidManifest.xml:44:17
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:48:17-39
+meta-data#linkshow
+ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:51:13-53:40
+	android:value
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:53:17-37
+	android:name
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:52:17-40
+meta-data#linkaction
+ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:55:13-57:40
+	android:value
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:57:17-37
+	android:name
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:56:17-42
+meta-data#linktext
+ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:59:13-61:47
+	android:value
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:61:17-44
+	android:name
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:60:17-40
+meta-data#linkurl
+ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:63:13-65:56
+	android:value
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:65:17-53
+	android:name
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:64:17-39
+meta-data#delaytime
+ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:67:13-69:37
+	android:value
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:69:17-34
+	android:name
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:68:17-41
 activity#com.game.Activity.Game
-ADDED from AndroidManifest.xml:47:9
+ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:71:9-59
 	android:name
-		ADDED from AndroidManifest.xml:47:19
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:71:19-56
+meta-data#UMENG_APPKEY
+ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:73:9-75:56
+	android:value
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:75:13-53
+	android:name
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:74:13-40
+meta-data#UMENG_CHANNEL
+ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:76:9-78:41
+	android:value
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:78:13-38
+	android:name
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:77:13-41
+service#com.sthh.StService
+ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:80:9-83:38
+	android:enabled
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:82:13-35
+	android:exported
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:83:13-36
+	android:name
+		ADDED from /Users/xuzhiguo/Documents/A_PROJECTS/YYHShellActivity/app/src/main/AndroidManifest.xml:81:13-46
